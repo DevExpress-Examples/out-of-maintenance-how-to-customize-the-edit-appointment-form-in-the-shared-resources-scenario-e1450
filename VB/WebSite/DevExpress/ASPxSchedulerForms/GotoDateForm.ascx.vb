@@ -1,4 +1,4 @@
-'
+﻿'
 '{************************************************************************************}
 '{                                                                                    }
 '{   DO NOT MODIFY THIS FILE!                                                         }
@@ -31,33 +31,32 @@
 '{************************************************************************************}
 '
 
-
-Imports Microsoft.VisualBasic
 Imports System
 Imports DevExpress.Web.ASPxEditors
 Imports DevExpress.Web.ASPxScheduler
 
 Partial Public Class GotoDateForm
-	Inherits SchedulerFormControl
-	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-		'PrepareChildControls();
-		edtDate.Focus()
-	End Sub
+    Inherits SchedulerFormControl
 
-	Public Overrides Sub DataBind()
-		MyBase.DataBind()
-		Dim container As GotoDateFormTemplateContainer = CType(Parent, GotoDateFormTemplateContainer)
-		cbView.Value = container.ActiveViewType.ToString()
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+        'PrepareChildControls();
+        edtDate.Focus()
+    End Sub
 
-		btnOk.ClientSideEvents.Click = container.ApplyHandler
-		btnCancel.ClientSideEvents.Click = container.CancelHandler
-	End Sub
-	Protected Overrides Function GetChildEditors() As ASPxEditBase()
-		Dim edits() As ASPxEditBase = { lblDate, edtDate, lblView, cbView }
-		Return edits
-	End Function
-	Protected Overrides Function GetChildButtons() As ASPxButton()
-		Dim buttons() As ASPxButton = { btnOk, btnCancel }
-		Return buttons
-	End Function
+    Public Overrides Sub DataBind()
+        MyBase.DataBind()
+        Dim container As GotoDateFormTemplateContainer = CType(Parent, GotoDateFormTemplateContainer)
+        cbView.Value = container.ActiveViewType.ToString()
+
+        btnOk.ClientSideEvents.Click = container.ApplyHandler
+        btnCancel.ClientSideEvents.Click = container.CancelHandler
+    End Sub
+    Protected Overrides Function GetChildEditors() As ASPxEditBase()
+        Dim edits() As ASPxEditBase = { lblDate, edtDate, lblView, cbView }
+        Return edits
+    End Function
+    Protected Overrides Function GetChildButtons() As ASPxButton()
+        Dim buttons() As ASPxButton = { btnOk, btnCancel }
+        Return buttons
+    End Function
 End Class

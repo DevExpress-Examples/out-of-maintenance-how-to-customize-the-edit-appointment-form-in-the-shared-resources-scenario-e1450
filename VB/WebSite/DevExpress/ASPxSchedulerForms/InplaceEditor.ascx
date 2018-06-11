@@ -45,42 +45,42 @@
 {************************************************************************************}--%>
 
 <%@ Control Language="vb" AutoEventWireup="true" Inherits="InplaceEditor" CodeFile="InplaceEditor.ascx.vb" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v9.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v9.1" Namespace="DevExpress.Web.ASPxScheduler.Controls"
-	TagPrefix="cc1" %>
-<%@ Register Assembly="DevExpress.Web.ASPxEditors.v9.1" Namespace="DevExpress.Web.ASPxEditors"
-	TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler.Controls"
+    TagPrefix="cc1" %>
+<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors"
+    TagPrefix="dxe" %>
 <table cellpadding="2"; cellspacing="0" style="width:100%; height:100%">
-	<tr>
-		<td style="width:100%" >
-			<dxe:ASPxMemo ClientInstanceName="_dx" ID="memSubject" runat="server" Width="100%" Rows="5" Text='<%#(CType(Container, AppointmentInplaceEditorTemplateContainer)).Appointment.Subject%>'>
-			</dxe:ASPxMemo>
-		</td>
-		<td valign="top" >
+    <tr>
+        <td style="width:100%" >
+            <dxe:ASPxMemo ClientInstanceName="_dx" ID="memSubject" runat="server" Width="100%" Rows="5" Text='<%#CType(Container, AppointmentInplaceEditorTemplateContainer).Appointment.Subject%>'>
+            </dxe:ASPxMemo>
+        </td>
+        <td valign="top" >
 
-		<div>
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnSave" Width="19px" Height="19px" ToolTip="Save" 
-				ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.Save.png")%>' 
-				Image-IsResourcePng="True">
-			 <Image Height="19px" Width="19px" />
-			</cc1:NoBorderButton> 
-		</div>
+        <div>
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnSave" Width="19px" Height="19px" ToolTip="Save" 
+                ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.Save.png")%>' 
+                Image-IsResourcePng="True">
+             <Image Height="19px" Width="19px" />
+            </cc1:NoBorderButton> 
+        </div>
 
-		<div style="padding-top:1px;">
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnCancel" Width="19px" Height="19px" ToolTip="Cancel" 
-				ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.Cancel.png")%>' 
-				CausesValidation="False" Image-IsResourcePng="True">
-			 <Image Height="19px" Width="19px"/>
-			</cc1:NoBorderButton> 
-		</div>
+        <div style="padding-top:1px;">
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnCancel" Width="19px" Height="19px" ToolTip="Cancel" 
+                ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.Cancel.png")%>' 
+                CausesValidation="False" Image-IsResourcePng="True">
+             <Image Height="19px" Width="19px"/>
+            </cc1:NoBorderButton> 
+        </div>
 
-		<div style="padding-top:6px;">
-			<cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnEditForm" Width="19px" Height="19px" ToolTip="Open Edit Form..." 
-				ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.EditForm.png")%>' 
-				CausesValidation="False" Image-IsResourcePng="True">
-			 <Image Height="19px" Width="19px" />
-			</cc1:NoBorderButton>
-		</div>
-		</td>
-	</tr>
+        <div style="padding-top:6px;">
+            <cc1:NoBorderButton runat="server" ClientInstanceName="_dx" ID="btnEditForm" Width="19px" Height="19px" ToolTip="Open Edit Form..." 
+                ImageUrl='<%#Page.ClientScript.GetWebResourceUrl(GetType(ASPxScheduler), "Images.InplaceEditor.EditForm.png")%>' 
+                CausesValidation="False" Image-IsResourcePng="True">
+             <Image Height="19px" Width="19px" />
+            </cc1:NoBorderButton>
+        </div>
+        </td>
+    </tr>
 </table>

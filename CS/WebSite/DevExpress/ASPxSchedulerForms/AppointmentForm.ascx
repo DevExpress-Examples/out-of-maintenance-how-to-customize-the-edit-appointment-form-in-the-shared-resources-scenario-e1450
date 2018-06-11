@@ -44,9 +44,9 @@
 --%>
 
 <%@ Control Language="C#" AutoEventWireup="true" Inherits="AppointmentForm" CodeFile="AppointmentForm.ascx.cs" %>
-<%@ Register Assembly="DevExpress.Web.ASPxEditors.v9.1" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v9.1" Namespace="DevExpress.Web.ASPxScheduler.Controls" TagPrefix="dxsc" %>
-<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v9.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
+<%@ Register Assembly="DevExpress.Web.v13.1" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler.Controls" TagPrefix="dxsc" %>
+<%@ Register Assembly="DevExpress.Web.ASPxScheduler.v13.1" Namespace="DevExpress.Web.ASPxScheduler" TagPrefix="dxwschs" %>
 
 <table class="dxscAppointmentForm" cellpadding="0" cellspacing="0" style="width: 100%; height: 230px;">
     <tr>
