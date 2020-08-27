@@ -7,7 +7,7 @@
     TagPrefix="dxsc" %>
 <%@ Register Assembly="DevExpress.Web.ASPxScheduler.v15.2" Namespace="DevExpress.Web.ASPxScheduler"
     TagPrefix="dxwschs" %>
-<%@ Register Assembly="DevExpress.Web.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v15.2, Version=15.2.20.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dxp" %>
 <table class="dxscAppointmentForm" cellpadding="0" cellspacing="0" style="width: 100%;
     height: 230px;">
